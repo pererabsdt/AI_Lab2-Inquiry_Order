@@ -15,17 +15,20 @@ The suitable algorithm for systematically processing and responding to customer 
 ## Input Format
 
 The input file `input.txt` contains the tree structure in the following format:
-  'root': ['A', 'B'],
-  'A': ['C', 'D'],
-  'B': ['E'],
-  'C': [],
-  'D': [],
-  'E': []
-
+```plaintext
+'root': ['A', 'B'],
+'A': ['C', 'D'],
+'B': ['E'],
+'C': [],
+'D': [],
+'E': [] 
+```
 ## Output
 
 The output will be a list representing the order in which inquiries should be processed:
+```plaintext
   ['root', 'A', 'B', 'C', 'D', 'E']
+```
 
 
 ## Usage
