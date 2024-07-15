@@ -2,6 +2,7 @@ from collections import deque
 
 
 def read_input_file(input_file):
+    """Reads the inquiry tree structure from a file and creates an adjacency list."""
     adjacency_list = {}
     with open(input_file, 'r') as file:
         for line in file:
@@ -20,6 +21,7 @@ def read_input_file(input_file):
 
 
 def bfs(adjacency_list, root):
+    """Performs BFS on the adjacency list and returns the order of nodes visited."""
     visited = []
     queue = deque([root])
 
